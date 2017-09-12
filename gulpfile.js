@@ -44,6 +44,26 @@ gulp.task("scripts", function () {
        .pipe(gulp.dest("app/js"));
 });
 
+gulp.task("clean", function () {
+    return del.sync('dist');
+});
+
+gulp.task("build", ["clean", "cssLibs", "scripts"], function () {
+    var buildJs = gulp.src('app/js/*.js')
+        .pipe(gulp.dest("dist/js"));
+
+    var bulidCss = gulp.src('app/css/*.css')
+        .pipe(gulp.dest("dist/css"));
+
+    var bulidHtml = gulp.src('app/*.html')
+        .pipe(gulp.dest("dist"));
+
+    var bulidFonts = gulp.src('app/fonts/*/*')
+        .pipe(gulp.dest("dist/fonts"));
+
+
+});
+
 gulp.task("default", ["cssLibs", "scripts", "browserSync"],function () {
     gulp.watch("app/sass/**/*.sass", ["sass"]);
     gulp.watch(["app/**/*.html", "app/js/**/*.js"], browserSync.reload)
