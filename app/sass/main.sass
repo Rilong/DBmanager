@@ -1,6 +1,7 @@
 @import "vars"
 @import "font"
 
+// Base styles
 .wrapper
   width: 1200px
   margin: 0 auto
@@ -8,18 +9,24 @@
 body
   background-color: $background
   font-family: $mainFont
+  min-height: 100vh
+
+a
+  color: $mainColor
+  text-decoration: none
+  outline: none
 
 .left
   float: left
 
 .right
   float: right
-
+// Header styles
 header
   width: 100%
   height: 60px
   background-color: $mainColor
-  margin-bottom: 20px
+
 
 .logo
   float: left
@@ -72,66 +79,46 @@ header
         font-size: 36px
         margin-left: 10px
 
+// Content styles
+.content
+  &.v-center
+    display: flex
+    align-items: center
+    height: 88vh
+  // Error message styles
+  .error-message
+    padding-top: 50px
+    max-width: 1000px
+    height: 500px
+    width: 100%
+    margin: 0 auto
+    background-color: #FFF
+    box-sizing: border-box
+
+    .icon-message
+      text-align: center
+      i
+        font-size: 326px
+        color: #CB0909
+
+    .text-message
+      text-align: center
+      font-size: 30px
+      color: $fontColor
+      a
+        display: inline-block
+        border-bottom: 1px solid $mainColor
+        height: 30px
+
 // Popup styles
-.mfp-close-btn-in
-  .mfp-close
-    color: #FFF
+.error-message
+  padding: 40px 70px
+  .error-title
+    font-size: 60px
+    color: #d79034
+    margin-bottom: 30px
 
-
-button.mfp-close
-  width: 50px
-  height: 40px
-  line-height: 38px
-  font-size: 35px
-  background-color: #CC0000
-  opacity: 1
-
-  transition: background-color .4s ease
-
-  &:hover
-    background-color: lighten(#CC0000, 5%)
-  &:active
-    top: 0
-
-.mfp-close.icon::before
-  content: '\f00d'
-  font-family: 'FontAwesome', sans-serif
-
-.base-popup
-  max-width: 1200px
-  width: 100%
-  min-height: 150px
-  background-color: #FFF
-  position: relative
-  margin: 0 auto
-  padding: 40px 20px
-  box-sizing: border-box
-
-
-// Popup animation
-.mfp-fade
-  // Overlay
-  &.mfp-bg
-    opacity: 0
-    transition: opacity .7s ease
-
-    &.mfp-ready
-      opacity: 0.8
-
-    &.mfp-removing
-      opacity: 0
-  // Content
-  &.mfp-wrap
-    .mfp-content
-      opacity: 0
-      transition: all .7s ease
-      top: -40px
-
-    &.mfp-ready
-        .mfp-content
-          opacity: 1
-          top: 0
-    &.mfp-removing
-      .mfp-content
-        opacity: 0
-        top: -40px
+  .error-text
+    font-size: 30px
+    color: #B30707
+    margin-bottom: 20px

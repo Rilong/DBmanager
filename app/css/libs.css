@@ -3427,3 +3427,78 @@ img.mfp-img {
     padding-right: 6px;
   }
 }
+
+.mfp-close-btn-in .mfp-close {
+  color: #FFF;
+}
+
+button.mfp-close {
+  width: 50px;
+  height: 40px;
+  line-height: 38px;
+  font-size: 35px;
+  background-color: #CC0000;
+  opacity: 1;
+  -webkit-transition: background-color .4s ease;
+  -o-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+}
+
+button.mfp-close:hover {
+  background-color: #e60000;
+}
+
+button.mfp-close:active {
+  top: 0;
+}
+
+.mfp-close.icon::before {
+  content: '\f00d';
+  font-family: 'FontAwesome', sans-serif;
+}
+
+.base-popup {
+  max-width: 1200px;
+  width: 100%;
+  min-height: 150px;
+  background-color: #FFF;
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mfp-fade.mfp-bg {
+  background: #505050;
+  opacity: 0;
+  -webkit-transition: opacity .7s ease;
+  -o-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  top: -40px;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  top: 0;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  top: -40px;
+}

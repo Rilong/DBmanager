@@ -34,14 +34,22 @@
         </div>
     </header>
     <!--End header-->
-    <main class="content">
+    <main class="content v-center">
         <div class="wrapper">
-            <button class="btn-modal">button</button>
+            <div class="error-message">
+                <div class="icon-message">
+                    <i class="fa fa-exclamation-circle"></i>
+                </div>
+                <div class="text-message">
+                    <p>Error connection. <a href="#" class="error-open">Detals</a><br />Please check your settings</p>
+                </div>
+            </div>
         </div>
     </main>
 
-    <div id="error-popup" class="base-popup mfp-hide">
-        Popup content
+    <div id="error-popup" class="base-popup error-message mfp-hide">
+        <h3 class="error-title">ERROR</h3>
+        <p class="error-text">SQLSTATE[42000] [1049] Unknown database 'dbname'</p>
     </div>
 
     <script src="js/libs.js" type="text/javascript"></script>

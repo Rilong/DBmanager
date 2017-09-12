@@ -1,5 +1,5 @@
 $(function () {
-    $('.btn-modal').magnificPopup({
+    $('.error-open').magnificPopup({
         items: {
             src: '#error-popup',
             closeBtnInside:true,
