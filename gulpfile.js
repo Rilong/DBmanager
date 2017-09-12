@@ -37,7 +37,7 @@ gulp.task("scripts", function () {
    return gulp.src(
        [
            "app/lib/jquery/dist/jquery.min.js",
-            "app/lib/magnific-popup/dist/jquery.magnific-popup.min.js"
+           "app/lib/magnific-popup/dist/jquery.magnific-popup.min.js"
        ])
        .pipe(uglify())
        .pipe(concat("libs.js"))
