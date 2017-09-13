@@ -160,6 +160,105 @@ header {
   height: 30px;
 }
 
+.content .sing-in-form {
+  max-width: 690px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .sing-in-form .form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 60px 0;
+  width: 85%;
+}
+
+.content .sing-in-form .form .input-text {
+  margin-bottom: 20px;
+}
+
+.content .sing-in-form .form .input-text input {
+  width: 100%;
+  height: 46px;
+  padding: 0 20px;
+  color: #FFF;
+  background-color: #81BAD4;
+  border: none;
+  border-bottom: 2px solid #56859A;
+  outline: none;
+  font-size: 21px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: border-bottom-color, .3s;
+  -o-transition: border-bottom-color, .3s;
+  transition: border-bottom-color, .3s;
+}
+
+.content .sing-in-form .form .input-text input:focus {
+  border-bottom-color: #79a2b4;
+}
+
+.content .sing-in-form .form .input-text input::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+.content .sing-in-form .form .input-text input::-moz-placeholder {
+  color: #FFF;
+}
+
+.content .sing-in-form .form .input-text input:-moz-placeholder {
+  color: #FFF;
+}
+
+.content .sing-in-form .form .input-text input:-ms-input-placeholder {
+  color: #FFF;
+}
+
+.content .sing-in-form .form .input-check label {
+  color: #56859A;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.content .sing-in-form .form .input-btn {
+  text-align: center;
+}
+
+.content .sing-in-form .form .input-btn input {
+  background-color: #87c2de;
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #FFF;
+  cursor: pointer;
+  margin-top: 48px;
+  font-size: 18px;
+  padding: 10px 60px;
+  outline: none;
+  -webkit-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+.content .sing-in-form .form .input-btn input:hover {
+  background-color: #5faed3;
+}
+
 .error-message {
   padding: 40px 70px;
 }
@@ -174,4 +273,33 @@ header {
   font-size: 30px;
   color: #B30707;
   margin-bottom: 20px;
+}
+
+.icheckbox_styling,
+.iradio_styling {
+  display: inline-block;
+  vertical-align: middle;
+  background: #70ACC7;
+  position: relative;
+  width: 29px;
+  height: 29px;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  cursor: pointer;
+}
+
+.icheckbox_styling.checked::before,
+.iradio_styling.checked::before {
+  content: '\f00c';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: FontAwesome, sans-serif;
+  font-size: 20px;
+  color: #FFF;
 }

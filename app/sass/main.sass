@@ -1,5 +1,6 @@
 @import "vars"
 @import "font"
+@import "_mixins/placeholder"
 
 // Base styles
 .wrapper
@@ -109,6 +110,67 @@ header
         display: inline-block
         border-bottom: 1px solid $mainColor
         height: 30px
+  // Sing in styles
+  .sing-in-form
+    max-width: 690px
+    width: 100%
+    margin: 0 auto
+    background-color: #FFF
+    display: flex
+
+    .form
+      display: flex
+      flex-direction: column
+      margin: 0 auto
+      padding: 60px 0
+      width: 85%
+      .input-text
+        margin-bottom: 20px
+        input
+          width: 100%
+          height: 50 - 4px
+          padding: 0 20px
+          color: #FFF
+          background-color: #81BAD4
+          border: none
+          border-bottom: 2px solid #56859A
+          outline: none
+          font-size: 21px
+
+          box-sizing: border-box
+
+          transition: border-bottom-color, .3s
+
+          &:focus
+            border-bottom-color: lighten(#56859A, 12%)
+
+          +placeholder(#FFF)
+
+      .input-check
+        label
+          color: #56859A
+          cursor: pointer
+          font-size: 18px
+
+      .input-btn
+        text-align: center
+        input
+          background-color: #87c2de
+          border: none
+          border-radius: 3px
+          box-shadow: none
+          color: #FFF
+          cursor: pointer
+          margin-top: 48px
+          font-size: 18px
+          padding: 10px 60px
+          outline: none
+
+          transition: background-color .5s
+
+          &:hover
+            background-color: darken(#87c2de, 10%)
+
 
 // Popup styles
 .error-message
@@ -122,3 +184,27 @@ header
     font-size: 30px
     color: #B30707
     margin-bottom: 20px
+
+// Checkbox Style
+.icheckbox_styling,
+.iradio_styling
+  display: inline-block
+  vertical-align: middle
+  background: #70ACC7
+  position: relative
+  width: 29px
+  height: 29px
+  margin: 0
+  padding: 0
+  border-radius: 5px
+  cursor: pointer
+  &.checked 
+    &::before
+      content: '\f00c'
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      font-family: FontAwesome, sans-serif
+      font-size: 20px
+      color: #FFF

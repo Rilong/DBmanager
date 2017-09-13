@@ -11,4 +11,9 @@ $(function () {
         mainClass: 'mfp-fade'
 
     });
+
+    $(".input-check > input").iCheck({
+        checkboxClass: 'icheckbox_styling',
+        radioClass: 'iradio_styling'
+    });
 });
