@@ -3469,6 +3469,7 @@ button.mfp-close:active {
   box-sizing: border-box;
 }
 
+/* Animation Fade */
 .mfp-fade.mfp-bg {
   opacity: 0;
   -webkit-transition: opacity .7s ease;
@@ -3502,7 +3503,7 @@ button.mfp-close:active {
   top: -40px;
 }
 
-/* END */
+/* Animation Scale */
 .mfp-scale.mfp-bg {
   opacity: 0;
   -webkit-transition: opacity .8s ease;
