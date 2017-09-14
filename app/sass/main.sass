@@ -7,6 +7,14 @@
   width: 1200px
   margin: 0 auto
 
+.left
+  float: left
+
+.right
+  float: right
+
+.clear
+  clear: both
 body
   background-color: $background
   font-family: $mainFont
@@ -17,11 +25,6 @@ a
   text-decoration: none
   outline: none
 
-.left
-  float: left
-
-.right
-  float: right
 // Header styles
 header
   width: 100%
@@ -146,6 +149,8 @@ header
 
           +placeholder(#FFF)
 
+
+
       .input-check
         label
           color: #56859A
@@ -171,6 +176,72 @@ header
           &:hover
             background-color: darken(#87c2de, 10%)
 
+  // Tables list styles
+  .tables
+    min-height: 780px
+    margin-top: 60px
+    background-color: #FFF
+    .tables-list
+      width: 100%
+      li
+        width: 100%
+        height: 50px
+        background-color: $grayColor
+        border-bottom: 1px solid #EEEEEE
+
+        transition: border-bottom-color, .7s
+        &:hover
+          border-bottom-color: darken(#EEEEEE, 15%)
+
+        &:last-child
+          border-bottom: none
+
+        .right
+          height: 100%
+        .table-name
+          line-height: 50px
+          margin-left: 17px
+          font-size: 20px
+          color: $tableListFontColor
+
+        .table-info
+          line-height: 50px
+          font-size: 20px
+          color: $tableListFontColor
+          margin-right: 200px
+          float: left
+          text-transform: uppercase
+
+          .table-rows
+            margin-right: 10px
+
+        .table-controls
+          float: right
+          height: 100%
+          .btn
+            width: 50px
+            height: 100%
+            border: none
+            outline: none
+            margin: 0
+            cursor: pointer
+            transition: background-color, .5s
+            .fa
+              font-size: 48px
+              color: #FFF
+            &.table-edit
+              margin-right: -4px
+              background-color: #D99816
+
+              &:active
+                background-color: lighten(#D99816, 10%)
+
+            &.table-remove
+              background-color: #A55050
+
+              &:active
+                background-color: lighten(#A55050, 10%)
+
 
 // Popup styles
 .error-message
@@ -184,6 +255,53 @@ header
     font-size: 30px
     color: #B30707
     margin-bottom: 20px
+
+.alert
+  display: flex
+  width: 650px
+  height: 307px
+  flex-direction: column
+  justify-content: center
+
+  .v-center
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+  .alert-text
+    color: $fontColor
+    font-size: 25px
+  .buttons-center
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+  .btn
+    width: 84px
+    height: 38px
+    text-transform: uppercase
+    color: #FFF
+    border: none
+    transition: background-color, .4s
+    font-weight: bold
+    font-size: 20px
+    outline: none
+    cursor: pointer
+
+    &.ok
+      background-color: #79C900
+      margin-right: 55px
+      &:active
+        background-color: lighten(#79C900, 5%)
+
+    &.cancel
+      background-color: #CE1212
+
+      &:active
+        background-color: lighten(#CE1212, 10%)
+
 
 // Checkbox Style
 .icheckbox_styling,

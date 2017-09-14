@@ -3470,7 +3470,6 @@ button.mfp-close:active {
 }
 
 .mfp-fade.mfp-bg {
-  background: #505050;
   opacity: 0;
   -webkit-transition: opacity .7s ease;
   -o-transition: opacity .7s ease;
@@ -3501,4 +3500,44 @@ button.mfp-close:active {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
   top: -40px;
+}
+
+/* END */
+.mfp-scale.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity .8s ease;
+  -o-transition: opacity .8s ease;
+  transition: opacity .8s ease;
+}
+
+.mfp-scale.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-scale.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-scale.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.mfp-scale.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.mfp-scale.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
 }
