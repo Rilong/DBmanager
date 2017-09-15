@@ -489,3 +489,95 @@ header {
   font-size: 20px;
   color: #FFF;
 }
+
+.loader {
+  height: 50px;
+}
+
+.loader .line-block {
+  position: relative;
+  width: 10px;
+  height: 50px;
+  float: left;
+  margin-right: 5px;
+}
+
+.loader .line-block:last-child {
+  margin-right: 0;
+}
+
+.loader .line-block .line {
+  display: inline-block;
+  width: 10px;
+  height: 0;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #81BAD4;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.loader .line-block:nth-child(1) .line {
+  -webkit-animation: load 1s linear infinite 1s alternate;
+          animation: load 1s linear infinite 1s alternate;
+}
+
+.loader .line-block:nth-child(2) .line {
+  -webkit-animation: load 1s linear infinite 0.875s alternate;
+          animation: load 1s linear infinite 0.875s alternate;
+}
+
+.loader .line-block:nth-child(3) .line {
+  -webkit-animation: load 1s linear infinite 0.75s alternate;
+          animation: load 1s linear infinite 0.75s alternate;
+}
+
+.loader .line-block:nth-child(4) .line {
+  -webkit-animation: load 1s linear infinite 0.625s alternate;
+          animation: load 1s linear infinite 0.625s alternate;
+}
+
+.loader .line-block:nth-child(5) .line {
+  -webkit-animation: load 1s linear infinite 0.5s alternate;
+          animation: load 1s linear infinite 0.5s alternate;
+}
+
+.loader .line-block:nth-child(6) .line {
+  -webkit-animation: load 1s linear infinite 0.375s alternate;
+          animation: load 1s linear infinite 0.375s alternate;
+}
+
+.loader .line-block:nth-child(7) .line {
+  -webkit-animation: load 1s linear infinite 0.25s alternate;
+          animation: load 1s linear infinite 0.25s alternate;
+}
+
+.loader .line-block:nth-child(8) .line {
+  -webkit-animation: load 1s linear infinite 0.125s alternate;
+          animation: load 1s linear infinite 0.125s alternate;
+}
+
+@-webkit-keyframes load {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 25px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+
+@keyframes load {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 25px;
+  }
+  100% {
+    height: 50px;
+  }
+}
