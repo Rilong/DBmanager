@@ -348,12 +348,21 @@ header
       left: 0
       bottom: 0
 
-    @for $i from 1 through $loaderElements
-      &:nth-child(#{$i})
-        .line
-          animation: load 1s linear infinite $loaderTimeOffset + s alternate
+    @if($loaderReverse == true)
+      @for $i from 1 through $loaderElements
+        &:nth-child(#{$i})
+          .line
+            animation: load 1s linear infinite $loaderTimeOffsetReverse + s alternate
 
-      $loaderTimeOffset: $loaderTimeOffset - $loaderAnimTime
+        $loaderTimeOffsetReverse: $loaderTimeOffsetReverse + $loaderAnimTime
+
+    @else
+      @for $i from 1 through $loaderElements
+        &:nth-child(#{$i})
+          .line
+            animation: load 1s linear infinite $loaderTimeOffset + s alternate
+
+        $loaderTimeOffset: $loaderTimeOffset - $loaderAnimTime
 
 @keyframes load
   0%

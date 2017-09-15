@@ -519,23 +519,23 @@ header {
 }
 
 .loader .line-block:nth-child(1) .line {
-  -webkit-animation: load 1s linear infinite 1s alternate;
-          animation: load 1s linear infinite 1s alternate;
+  -webkit-animation: load 1s linear infinite 0s alternate;
+          animation: load 1s linear infinite 0s alternate;
 }
 
 .loader .line-block:nth-child(2) .line {
-  -webkit-animation: load 1s linear infinite 0.875s alternate;
-          animation: load 1s linear infinite 0.875s alternate;
+  -webkit-animation: load 1s linear infinite 0.125s alternate;
+          animation: load 1s linear infinite 0.125s alternate;
 }
 
 .loader .line-block:nth-child(3) .line {
-  -webkit-animation: load 1s linear infinite 0.75s alternate;
-          animation: load 1s linear infinite 0.75s alternate;
+  -webkit-animation: load 1s linear infinite 0.25s alternate;
+          animation: load 1s linear infinite 0.25s alternate;
 }
 
 .loader .line-block:nth-child(4) .line {
-  -webkit-animation: load 1s linear infinite 0.625s alternate;
-          animation: load 1s linear infinite 0.625s alternate;
+  -webkit-animation: load 1s linear infinite 0.375s alternate;
+          animation: load 1s linear infinite 0.375s alternate;
 }
 
 .loader .line-block:nth-child(5) .line {
@@ -544,18 +544,18 @@ header {
 }
 
 .loader .line-block:nth-child(6) .line {
-  -webkit-animation: load 1s linear infinite 0.375s alternate;
-          animation: load 1s linear infinite 0.375s alternate;
+  -webkit-animation: load 1s linear infinite 0.625s alternate;
+          animation: load 1s linear infinite 0.625s alternate;
 }
 
 .loader .line-block:nth-child(7) .line {
-  -webkit-animation: load 1s linear infinite 0.25s alternate;
-          animation: load 1s linear infinite 0.25s alternate;
+  -webkit-animation: load 1s linear infinite 0.75s alternate;
+          animation: load 1s linear infinite 0.75s alternate;
 }
 
 .loader .line-block:nth-child(8) .line {
-  -webkit-animation: load 1s linear infinite 0.125s alternate;
-          animation: load 1s linear infinite 0.125s alternate;
+  -webkit-animation: load 1s linear infinite 0.875s alternate;
+          animation: load 1s linear infinite 0.875s alternate;
 }
 
 @-webkit-keyframes load {
