@@ -490,6 +490,80 @@ header {
   color: #FFF;
 }
 
+.content .form-wrap {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 550px;
+  margin: 130px auto 0;
+  padding: 40px;
+}
+
+.content .form-wrap .form {
+  padding: 0 10%;
+}
+
+.content .form-wrap .form.user .section {
+  margin: 10px 0;
+}
+
+.content .form-wrap .form .section {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #95989A;
+}
+
+.content .form-wrap .form label {
+  display: block;
+  font-size: 14px;
+  color: #628EA2;
+  margin: 5px 0 2px;
+}
+
+.content .form-wrap .form input {
+  background-color: #81BAD4;
+  height: 60px;
+  border: none;
+  border-bottom: 2px solid #56859A;
+  outline: none;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .form-wrap .form .generate-block {
+  position: relative;
+}
+
+.content .form-wrap .form .generate-block .generate {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #C2ECFF;
+  color: #3a5668;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 5px;
+  -webkit-transition: background-color, .4s ease;
+  -o-transition: background-color, .4s ease;
+  transition: background-color, .4s ease;
+  cursor: pointer;
+}
+
+.content .form-wrap .form .generate-block .generate:hover {
+  background-color: #8fdcff;
+}
+
+.content .form-wrap .form input {
+  width: 100%;
+}
+
 .loader {
   height: 50px;
 }

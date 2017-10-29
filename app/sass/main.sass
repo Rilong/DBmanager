@@ -326,6 +326,68 @@ header
       font-family: FontAwesome, sans-serif
       font-size: 20px
       color: #FFF
+
+// Settings style
+.content
+  .form-wrap
+    background-color: #ffffff
+    width: 100%
+    max-width: 550px
+    margin: 130px auto 0
+    padding: 40px
+
+
+    .form
+      padding: 0 10%
+
+      &.user
+        .section
+          margin: 10px 0
+      .section
+        margin-bottom: 10px
+        font-size: 30px
+        color: $fontColor
+
+      label
+        display: block
+        font-size: 14px
+        color: #628EA2
+        margin: 5px 0 2px
+
+      input
+        background-color: $mainColor
+        height: 60px
+        border: none
+        border-bottom: 2px solid #56859A
+        outline: none
+        padding: 0 20px
+        color: #fff
+        font-size: 24px
+        box-sizing: border-box
+
+      .generate-block
+        position: relative
+        .generate
+          position: absolute
+          top: 50%
+          right: 5px
+          transform: translateY(-50%)
+
+          background-color: #C2ECFF
+          color: #3a5668
+          border: none
+          outline: none
+          border-radius: 5px
+          padding: 5px
+          transition: background-color, .4s ease
+          cursor: pointer
+
+          &:hover
+            background-color: darken(#C2ECFF, 10%)
+
+      input
+        width: 100%
+
 // Loader Style
 .loader
   height: 50px
